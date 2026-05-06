@@ -1,3 +1,4 @@
+# um simples nó de transcrição de fala para texto usando a biblioteca speech_recognition e pyaudio
 import rclpy
 from rclpy.node import Node
 import speech_recognition as sr
@@ -14,7 +15,7 @@ class Transcrever(Node):
 
     def transcreverFalaEmTexto(self):
         with self.microfone as fonte:
-            # ajustar o reconecedor para o ruido de fundo
+            # ajustando o reconhecedor para o ruido de fundo
             self.reconhecedor.adjust_for_ambient_noise(fonte) 
             
             while rclpy.ok():

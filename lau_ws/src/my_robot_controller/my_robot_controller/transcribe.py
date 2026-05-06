@@ -1,3 +1,4 @@
+# um simples nó de transcrição de fala para texto usando a biblioteca speech_recognition e pyaudio
 import rclpy
 from rclpy.node import Node
 import speech_recognition as sr

@@ -28,6 +28,8 @@ setup(
             "my_publisher = my_robot_controller.my_publisher:main",
             "my_subscriber = my_robot_controller.my_subscriber:main",
             "transcrever = my_robot_controller.transcribe:main",
+            "transcrever_service = my_robot_controller.transcribeService:main",
+            "transcrever_client = my_robot_controller.transcribeClient:main",
         ],
     },
 )
