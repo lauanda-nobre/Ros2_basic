@@ -22,7 +22,7 @@ class TranscreverService(Node):
             try:
                 self.get_logger().info("Ouvindo para o serviço...")
                 self.reconhecedor.adjust_for_ambient_noise(fonte, duration=0.5)
-                audio = self.reconhecedor.listen(fonte, timeout=5.0) # um tempo limite para ouvir
+                audio = self.reconhecedor.listen(fonte, timeout=2.0) # um tempo limite para ouvir
                 
                 texto = self.reconhecedor.recognize_google(audio, language="pt-BR")
                 
